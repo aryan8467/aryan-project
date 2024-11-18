@@ -1,0 +1,38 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Disease Detector</title>
+    <link rel="stylesheet" href="styles.csss">
+</head>
+<body>
+    <div class="container">
+        <h1>Plant Disease Detection System</h1>
+        <p>Upload a photo of the plant to identify any disease and get possible solutions.</p>
+        
+    
+        <form id="uploadForm">
+            <input type="file" id="plantImage" accept="image/*" required>
+            <button type="submit">Upload and Analyze</button>
+        </form>
+
+    
+        <div id="result" style="display:none;">
+            <h3>Detected Problem:</h3>
+            <p id="problem"></p>
+            <h3>Suggested Solution:</h3>
+            <p id="solution"></p>
+        </div>
+    </div>
+
+    <script src="script.js">
+    
+    </script> 
+</body>
+</html>

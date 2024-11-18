@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="abc"></p>
+    <p id="ab"></p>
+    <p id="aba"></p>
+    <script>
+        // Construction function for person Objects
+        function person(first,last,age,eye){
+            this.firstName=first;
+            this.LastName=last;
+            this.age=age;
+            this.eyeColor=eye;
+            this.fullName=function() {
+                return this.firstName + " " + this.LastName
+            };
+        }
+        // Create a Person Object
+        const myFather=new person("Krishna","Sharma",49,"blue");
+        const myUncle=new person("Mohan","Sharma",47,"Light Green");
+        const myBrother=new person("Rohit","Sharma",27,"Brown");
+        // Display full name
+        document.getElementById("abc").innerHTML=                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+        "My Father is Mr. "+myFather.fullName();
+        document.getElementById("ab").innerHTML=
+        "My Uncle is Mr. "+myUncle.fullName();
+        document.getElementById("aba").innerHTML=
+        "My Brother is Mr. "+myBrother.fullName();
+    </script>
+</body>
+</html>
